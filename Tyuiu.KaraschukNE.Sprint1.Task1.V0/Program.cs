@@ -1,5 +1,4 @@
-﻿
-using Tyuiu.KaraschukNE.Sprint1.Task0.V13.Lib;
+﻿using Tyuiu.KaraschukNE.Sprint1.Task1.V3.Lib;
 // See https://aka.ms/new-console-template for more information
 
 class Program
@@ -12,23 +11,31 @@ class Program
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* Спринт #1                                                               *");
         Console.WriteLine("* Тема: Базовые навыки работы в C#                                        *");
-        Console.WriteLine("* Задание #0                                                              *");
-        Console.WriteLine("* Вариант #13                                                             *");
+        Console.WriteLine("* Задание #1                                                              *");
+        Console.WriteLine("* Вариант #3                                                              *");
         Console.WriteLine("* Выполнил: Каращук Никита Евгеньевич | ИСПб-26-1                         *");
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* УСЛОВИЕ:                                                                *");
-        Console.WriteLine("* Написать программу, которая вычисляет выражение 24/(6*2)-24/6/6)        *");
-        Console.WriteLine("* и печатает результат на экран.                                          *");
+        Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные, *");
+        Console.WriteLine("* вычисляет результат по формуле (x-y)/(x+3)+3 и печатает его на экране.  *");
         Console.WriteLine("*                                                                         *");
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ                                                         *");
         Console.WriteLine("***************************************************************************");
-        Console.WriteLine("* 24/(6*2)-24/6/6)                                                        *");
+
+
+        double x, y;
+        Console.WriteLine("Введите значение X;");
+        x = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Введите значение Y;");
+        y = Convert.ToDouble(Console.ReadLine());
+
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
+        Console.WriteLine(ds.Calculate(x, y));
 
-        Console.WriteLine(ds.Calculate());
         Console.ReadLine();
     }
 }
